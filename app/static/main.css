@@ -1,0 +1,95 @@
+:root {
+  --p-xs: 0.5rem;
+  --p-sm: 1rem;
+  --p: 2rem;
+  --p-l: 4rem;
+  --p-xl: 10rem;
+  
+  --m-xs: 0.5rem;
+  --m-sm: 1rem;
+  --m: 2rem;
+  --m-l: 4rem;
+  --m-xl: 10rem;
+
+  --primary: rgba(52, 152, 219, 1);
+  --secondary: rgba(46, 204, 113, 1);
+  --accent: rgba(231, 76, 60, 1);
+  --background-light: rgba(236,240,241, 1);
+  --background-dark: #243b4a;
+  --text-light-color: rgba(236, 240, 241, 1);
+  --text-dark-color: rgba(44, 62, 80, 1);
+}
+
+body {
+  --background-c: var(--background-dark, none);
+  --tc: var(--text-light-color, white);
+  margin: 0;
+  background-color: var(--background-c);
+  color: var(--tc);
+  height: 100vh;
+  font-family: sans-serif;
+  line-height: 1.4rem;
+  font-weight: 400;
+}
+
+a {
+  --link-color: var(--primary);
+  color: var(--link-color);
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+input, button {
+  --margin-bottom: var(--m-sm, 1rem);
+  --padding: var(--p-sm, 1rem);
+  padding: var(--padding);
+  border-radius: 1rem;
+  margin-bottom: var(--margin-bottom);
+  box-shadow: 0 0 0 0 rgba(52, 152, 219, 0.5);
+}
+
+button {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: .75rem;
+}
+
+hr {
+  --margin: var(--m-sm, 1rem);
+  width: 100%;
+  margin: var(--margin);
+}
+
+hr.dashed {
+  border-top: 3px dashed #bbb;
+}
+
+/* Dotted border */
+hr.dotted {
+  border-top: 3px dotted #bbb;
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+/* Rounded border */
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
+
+.column {
+  --column-padding: var(--p-sm, 1rem);
+  display: flex;
+  flex-direction: column;
+  padding: var(--column-padding);
+}
+
+.row {
+  --row-padding: var(--p-sm, 1rem);
+  display: flex;
+  flex-direction: row;
+  padding: var(--row-padding);
+}
