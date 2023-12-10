@@ -1,0 +1,13 @@
+{
+  "watch": [
+    "api/",
+    "app/"
+  ],
+  "ext": "js,json,svelte",
+  "ignore": [
+    "node_modules",
+    "postman.json",
+    "README"
+  ],
+  "exec": "cd ./app npm run build && vite"
+}
